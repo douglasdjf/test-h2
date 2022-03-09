@@ -1,0 +1,9 @@
+Caso seja adicionado um Profile no Maven é necessário definir um default
+
+
+ou no momento que for realizar algum comando mvn é necessario definir qual profile
+
+Exemplo: mvn clean install -Pdev
+
+
+https://www.baeldung.com/spring-profiles
