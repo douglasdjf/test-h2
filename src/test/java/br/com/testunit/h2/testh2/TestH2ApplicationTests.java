@@ -1,6 +1,5 @@
 package br.com.testunit.h2.testh2;
 
-import br.com.testunit.h2.testh2.service.UsuarioService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,14 +21,9 @@ class TestH2ApplicationTests {
 	@Autowired
 	private ObjectMapper objectMapper;
 
-	@Autowired
-	private UsuarioService service;
-
 	@Test
 	void deveListarUsuarios() throws Exception {
-
 		mockMvc.perform(get("/usuarios")).andExpect(status().isOk());
-
 	}
 
 }
